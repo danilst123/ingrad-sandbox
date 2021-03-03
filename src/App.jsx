@@ -10,7 +10,6 @@ import "./App.sass";
 const App = () => {
   return (
     <ThemeContext.Provider value={{colors, isDarkMode}}>
-      <Header />
       <Layout />
     </ThemeContext.Provider>
   )

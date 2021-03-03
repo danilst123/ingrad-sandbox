@@ -1,11 +1,7 @@
-import React, { useContext, useState } from 'react';
-import ThemeContext from '../../Context/ThemeContext/ThemeContext';
+import React from 'react';
 import "./Header.sass";
 
-const Header = () => {
-  const context = useContext(ThemeContext);
-  const [theme, setTheme] = useState(context);
-
+const Header = ({theme, toggleTheme}) => {
   return (
     <header 
       className="header"
@@ -14,7 +10,7 @@ const Header = () => {
         color: theme.isDarkMode ? theme.colors.white : theme.colors.black,
       }}>
         <h1>Hello, Ingrad</h1>
-        <button onClick={() => setTheme({...theme, isDarkMode: !theme.isDarkMode})}>change theme</button>
+        <button onClick={toggleTheme}>change theme</button>
     </header>
   )
 }
