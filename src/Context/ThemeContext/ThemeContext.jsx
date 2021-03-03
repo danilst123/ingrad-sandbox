@@ -1,6 +1,8 @@
 import React from 'react';
 
-const colors = {
+export const isDarkMode = false;
+
+export const colors = {
   white: "#FFFFFF",
   yellow1: "#F5DB52",
   yellow2: "#FAF3C8",
@@ -27,6 +29,6 @@ const colors = {
   }
 }
 
-const ThemeContext = React.createContext(colors);
+const ThemeContext = React.createContext();
 
 export default ThemeContext;
