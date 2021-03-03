@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Feed from './components/Feed/Feed';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Feed />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import "./Feed.sass"
 
 const Feed = () => {
   return (
-    <div>
-      <h1>Hello, Ingrad!</h1>
-    </div>
+    <section className="feed">
+      <h1>Hello</h1>
+    </section>
   )
 }
 
