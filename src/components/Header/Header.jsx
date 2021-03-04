@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1>Hello, Ingrad</h1>
-      <button onClick={() => dispatch(toggleTheme())}>change theme</button>
+      <span onClick={() => dispatch(toggleTheme())} className="icon-font if-view"></span>
     </header>
   )
 }
