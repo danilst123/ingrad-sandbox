@@ -3,7 +3,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 import ColorsContext, { colors } from './Context/ColorsContext/ColorsContext';
-import rootReducer from './Components/redux/rootReducer';
+import rootReducer from './redux/rootReducer';
 
 import View from './Components/View/View';
 import Layout from './Components/Layout/Layout';

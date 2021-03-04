@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { toggleTheme } from '../redux/theme/actions';
+import { toggleTheme } from '../../redux/theme/actions';
 import "./Header.sass";
 
 const Header = () => {
