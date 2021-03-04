@@ -1,16 +1,15 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { toggleTheme } from '../redux/theme/actions';
 import "./Header.sass";
 
-const Header = ({theme, toggleTheme}) => {
+const Header = () => {
+  const dispatch = useDispatch()
+
   return (
-    <header 
-      className="header"
-      style={{
-        background: theme.isDarkMode ? theme.colors.black : theme.colors.white,
-        color: theme.isDarkMode ? theme.colors.white : theme.colors.black,
-      }}>
-        <h1>Hello, Ingrad</h1>
-        <button onClick={toggleTheme}>change theme</button>
+    <header className="header">
+      <h1>Hello, Ingrad</h1>
+      <button onClick={() => dispatch(toggleTheme())}>change theme</button>
     </header>
   )
 }
