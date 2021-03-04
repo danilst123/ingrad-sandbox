@@ -1,0 +1,41 @@
+@import "../../styles/variables"
+@import "../../styles/mixins"
+@import "../../styles/colors"
+
+.navigation
+  width: 240px
+
+  &-item
+    // shape
+    display: flex
+    align-items: center
+    width: 100%
+    height: 40px
+    padding: 8px 24px
+    border-radius: 6px
+
+    // effects
+    transition: color 0.3s, background 0.3s
+
+    // font
+    @include subtitle-14-20
+    text-decoration: none
+
+    &[data-dark="false"]
+      &[data-active="false"]
+        color: $grey
+        background: none
+      &[data-active="true"]
+        color: $black
+        background: $yellow2
+
+    &[data-dark="true"]
+      &[data-active="false"]
+        color: $dark-mode-grey2
+        background: none
+      &[data-active="true"]
+        color: $dark-mode-white
+        background: $dark-mode-greyStroke
+
+  &-item + &-item
+    margin-top: 8px

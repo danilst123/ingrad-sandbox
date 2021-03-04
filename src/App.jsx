@@ -8,6 +8,7 @@ import rootReducer from './redux/rootReducer';
 import View from './Components/View/View';
 import Layout from './Components/Layout/Layout';
 
+import "./styles/index.sass"
 import "./App.sass";
 
 const store = createStore(rootReducer);
