@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from './Components/Header/Header';
+import View from './Components/View/View';
 import Layout from './Components/Layout/Layout';
 
 import ThemeContext, { colors, isDarkMode } from './Context/ThemeContext/ThemeContext';
@@ -10,7 +10,9 @@ import "./App.sass";
 const App = () => {
   return (
     <ThemeContext.Provider value={{colors, isDarkMode}}>
-      <Layout />
+      <View>
+        <Layout />
+      </View>
     </ThemeContext.Provider>
   )
 }

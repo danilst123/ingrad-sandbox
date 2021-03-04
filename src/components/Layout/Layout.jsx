@@ -22,7 +22,6 @@ const Layout = () => {
         background: theme.isDarkMode ? theme.colors.black : theme.colors.white,
         color: theme.isDarkMode ? theme.colors.white : theme.colors.black,
       }}>
-      <div className="layout__grid">
         <div className="layout__header">
           <Header theme={theme} toggleTheme={() => setTheme({...theme, isDarkMode: !theme.isDarkMode})} />
         </div>
@@ -39,7 +38,6 @@ const Layout = () => {
         <aside className="layout__aside">
           <div className="layout__sticky">3</div>
         </aside>
-      </div>
     </main>
   )
 }
