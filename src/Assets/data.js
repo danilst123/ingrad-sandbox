@@ -1,38 +1,47 @@
 export const navigationLinks = [
   {
     title: "Рабочий стол",
-    link: "/"
+    link: "/",
+    icon: "desktop"
   },
   {
     title: "Лента",
-    link: "/feed"
+    link: "/feed",
+    icon: "news"
   },
   {
     title: "Моя компания",
-    link: "/company"
+    link: "/company",
+    icon: "bag"
   },
   {
     title: "Структура",
-    link: "/structure"
+    link: "/structure",
+    icon: "organization"
   },
   {
     title: "Поэтажный план",
-    link: "/plan"
+    link: "/plan",
+    icon: "floor-plan"
   },
   {
     title: "Сообщества",
-    link: "/groups"
+    link: "/community",
+    icon: "community"
   },
   {
     title: "Магазин",
-    link: "/store"
+    link: "/store",
+    icon: "gift"
   },
   {
     title: "База знаний",
-    link: "/knowldge"
+    link: "/knowldge",
+    icon: "book"
   },
   {
     title: "О портале",
-    link: "/about"
+    link: "/about",
+    icon: "info"
   },
 ]

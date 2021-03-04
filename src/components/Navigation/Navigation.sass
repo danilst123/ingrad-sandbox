@@ -13,6 +13,7 @@
     height: 40px
     padding: 8px 24px
     border-radius: 6px
+    min-width: 0
 
     // effects
     transition: color 0.3s, background 0.3s
@@ -25,6 +26,8 @@
       &[data-active="false"]
         color: $grey
         background: none
+        &:hover
+          background: $yellow2
       &[data-active="true"]
         color: $black
         background: $yellow2
@@ -33,9 +36,21 @@
       &[data-active="false"]
         color: $dark-mode-grey2
         background: none
+        &:hover
+          background: $dark-mode-greyStroke
       &[data-active="true"]
         color: $dark-mode-white
         background: $dark-mode-greyStroke
+
+    &__icon
+      font-size: 24px
+      margin-right: 20px
+
+    &__title
+      min-width: 0
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
 
   &-item + &-item
     margin-top: 8px

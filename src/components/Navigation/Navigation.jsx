@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import "./Navigation.sass";
 import { Link } from 'react-router-dom';
 import { setActiveNavLink } from '../../redux/navigation/actions';
+import IconFont from '../IconFont/IconFont';
 
 const NavigationItem = ({page, index, isActive}) => {
   const theme = useSelector(state => state.theme);
@@ -18,7 +19,8 @@ const NavigationItem = ({page, index, isActive}) => {
       data-dark={theme.isDarkMode}
       onClick={() => dispatch(setActiveNavLink(index))}
       >
-        <span>{page.title}</span>
+        <IconFont className="navigation-item__icon" icon={page.icon} />
+        <span className="navigation-item__title">{page.title}</span>
     </Link>
   )
 }
